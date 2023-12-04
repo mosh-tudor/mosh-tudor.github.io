@@ -7,6 +7,8 @@ if (params.has('invite')) {
   const subscriptions = lpbBody.dataset.subscriptions?.split(',') || []
   const noteCategory = "note_2023";
 
+  console.log(inviteCode, recirectUrl, subscriptions, noteCategory, subscriptions.includes(noteCategory));
+
   if (subscriptions.includes(noteCategory)) {
     window.location.href = recirectUrl;
   } else {
